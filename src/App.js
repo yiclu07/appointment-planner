@@ -47,7 +47,7 @@ function App() {
           Contacts
         </NavLink>
         <NavLink to={ROUTES.APPOINTMENTS} activeClassName='active'>
-          Appointsments
+          Appointments
         </NavLink>
       </nav>
       <main>
