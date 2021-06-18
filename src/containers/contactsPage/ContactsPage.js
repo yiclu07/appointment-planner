@@ -27,6 +27,9 @@ export const ContactsPage = (props) => {
     */
     if (!isDuplicate) {
       addContact(newName, newPhone, newEmail);
+      setNewName('');
+      setNewPhone('');
+      setNewEmail('');
     }
   };
 
@@ -35,11 +38,11 @@ export const ContactsPage = (props) => {
   contacts array variable in props
   */
   useEffect(() => {
-    const containsDuplicate = contacts.includes(contact => {
+    const containsDuplicate = contacts.some(contact => {
       return contact.name === newName; 
     });
     setIsDuplicate(containsDuplicate);
-  }, [newName])
+  }, [newName]);
 
   return (
     <div>
