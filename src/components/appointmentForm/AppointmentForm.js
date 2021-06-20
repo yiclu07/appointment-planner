@@ -20,6 +20,17 @@ export const AppointmentForm = ({
   };
 
   return (
-    AppointmentForm
+    <form onSubmit={handleSubmit}>
+      <input type="text" value={newTitle} placeholder="Title" onChange={(e) => {
+        setNewTitle(e.target.value);
+      }} />
+      <input type="date" value={newDate} onChange={(e) => {
+        setNewDate(e.target.value);
+      }} />
+      <input type="time" value={newTime} onChange={(e) => {
+        setNewTime(e.target.value);
+      }} />
+      <input type="submit" />
+    </form>
   );
 };
