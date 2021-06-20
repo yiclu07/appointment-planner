@@ -25,7 +25,7 @@ export const AppointmentForm = ({
       <input type="text" value={newTitle} placeholder="Title" onChange={(e) => {
         setNewTitle(e.target.value);
       }} />
-      <input type="date" value={newDate} onChange={(e) => {
+      <input type="date" value={newDate} min={getTodayString()} onChange={(e) => {
         setNewDate(e.target.value);
       }} />
       <input type="time" value={newTime} onChange={(e) => {
