@@ -2,14 +2,14 @@ import React from 'react';
 
 export const AppointmentForm = ({
   contacts,
-  title,
-  setTitle,
-  contact,
-  setContact,
-  date,
-  setDate,
-  time,
-  setTime,
+  newTitle,
+  setNewTitle,
+  newContact,
+  setNewContact,
+  newDate,
+  setNewDate,
+  newTime,
+  setNewTime,
   handleSubmit
 }) => {
   const getTodayString = () => {
