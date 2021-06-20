@@ -23,7 +23,7 @@ export const AppointmentsPage = ({
     */
     addAppointment(newTitle, newContact, newDate, newTime);
     setNewTitle('');
-    setNewContact('');
+    
     setNewDate('');
     setNewTime('');
   };
